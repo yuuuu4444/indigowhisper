@@ -806,13 +806,13 @@ h1{
 
     .productTitle{
         color: var(--primary);
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
     }
     
     .productSeries{
         color: var(--primary);
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 400;
     }
 }
