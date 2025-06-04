@@ -361,7 +361,8 @@ h1{
 }
 
 .stepSection .row .col-lg-6:nth-child(even){
-    margin-top: 180px;
+    /* margin-top: 180px; */
+    transform: translateY(50%);
 }
 
 /* ----工作坊消息區塊---- */
@@ -443,7 +444,7 @@ h1{
 /* ----footer區塊---- */
 .footer{
     height: 430px;
-    background-image: url('./img/footerImg.png'); ;
+    background-image: url('img/footerImg.png'); ;
 }
 
 .footer .col-lg-9{
@@ -627,6 +628,12 @@ h1{
     color: var(--secondary);
 }
 
+.breadcrumb li:not(:last-child)::after {
+    content: '>'; 
+    margin: 0 8px; 
+    color: #666; 
+}
+
 
 /* ----左側選單區塊---- */
 .sidebarFilters{
@@ -766,6 +773,11 @@ h1{
     vertical-align: middle;
     object-fit: cover;
     object-position: center center;
+    transition: transform 0.5s ease;
+}
+
+.productCard .productPic img:hover{
+    transform: scale(1.05);
 }
 
 .productCard .productInfo{
@@ -782,6 +794,7 @@ h1{
 
     a{
         text-decoration: none;
+        color: var(--primary);
         
     }
     a:visited{
