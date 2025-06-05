@@ -10,7 +10,7 @@
 body{
     background-image: url('img/texture.png');
     background-repeat: repeat;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 
     font-family: "Noto Sans JP";
 }
